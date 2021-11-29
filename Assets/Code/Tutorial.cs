@@ -30,6 +30,7 @@ public class Tutorial : MonoBehaviour
     public GameObject Fleche2;
     public GameObject Fleche3;
     public GameObject Fleche4;
+    public GameObject Fleche5;
     public GameObject FlecheCanvas;
     public GameObject FlecheCanvas2;
 
@@ -214,8 +215,8 @@ public class Tutorial : MonoBehaviour
             imageObjectif.SetActive(true);
             TexteObjectif.text = "Moule tes premières pieces";
             texteObjectif.SetActive(true);
-            Fleche.transform.position = new Vector3(-10.96f, -1.12f, -9.31f);
-            Fleche.SetActive(true);
+            //Fleche.transform.position = new Vector3(-10.96f, -1.12f, -9.31f);
+            Fleche5.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
         }
@@ -224,7 +225,7 @@ public class Tutorial : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
             Jeanne.GetComponent<Image>().sprite = jeanne3;
-            Fleche.SetActive(false);
+            Fleche5.SetActive(false);
             TutorialCanvas.SetActive(true);
             imageObjectif.SetActive(false);
             texteObjectif.SetActive(false);
