@@ -27,6 +27,9 @@ public class Tutorial : MonoBehaviour
 
 
     public GameObject Fleche;
+    public GameObject Fleche2;
+    public GameObject Fleche3;
+    public GameObject Fleche4;
     public GameObject FlecheCanvas;
     public GameObject FlecheCanvas2;
 
@@ -125,8 +128,8 @@ public class Tutorial : MonoBehaviour
             imageObjectif.SetActive(true);
             TexteObjectif.text = "Consruis la Découpeuse";
             texteObjectif.SetActive(true);
-            Fleche.transform.position = new Vector3(-5.52f, -1.12f, -0.49f);
-            Fleche.SetActive(true);
+            //Fleche.transform.position = new Vector3(-5.52f, -1.12f, -0.49f);
+            Fleche2.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
         }
@@ -135,7 +138,7 @@ public class Tutorial : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
             Jeanne.GetComponent<Image>().sprite = jeanne2;
-            Fleche.SetActive(false);
+            Fleche2.SetActive(false);
             TutorialCanvas.SetActive(true);
             imageObjectif.SetActive(false);
             texteObjectif.SetActive(false);
@@ -161,8 +164,8 @@ public class Tutorial : MonoBehaviour
             imageObjectif.SetActive(true);
             TexteObjectif.text = "Découpe ces premiers flans";
             texteObjectif.SetActive(true);
-            Fleche.transform.position = new Vector3(1.79f, 1.7f, 6.05f);
-            Fleche.SetActive(true);
+            //Fleche.transform.position = new Vector3(1.79f, 1.7f, 6.05f);
+            Fleche3.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
         }
@@ -171,7 +174,7 @@ public class Tutorial : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
             Jeanne.GetComponent<Image>().sprite = jeanne3;
-            Fleche.SetActive(false);
+            Fleche3.SetActive(false);
             TutorialCanvas.SetActive(true);
             imageObjectif.SetActive(false);
             texteObjectif.SetActive(false);
@@ -186,8 +189,8 @@ public class Tutorial : MonoBehaviour
             imageObjectif.SetActive(true);
             TexteObjectif.text = "Construis la Mouleuse de Cuivre";
             texteObjectif.SetActive(true);
-            Fleche.transform.position = new Vector3(-5.52f, -1.12f, -0.49f);
-            Fleche.SetActive(true);
+            //Fleche.transform.position = new Vector3(-5.52f, -1.12f, -0.49f);
+            Fleche4.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
         }
@@ -196,7 +199,7 @@ public class Tutorial : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
             Jeanne.GetComponent<Image>().sprite = jeanne1;
-            Fleche.SetActive(false);
+            Fleche4.SetActive(false);
             TutorialCanvas.SetActive(true);
             imageObjectif.SetActive(false);
             texteObjectif.SetActive(false);
