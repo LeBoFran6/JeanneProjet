@@ -26,6 +26,8 @@ public class Decoupeuse : MonoBehaviour
     public GameObject ButtonRecup;
     public Text TextButton;
 
+    public GameObject anim;
+
     void Update()
     {
         PlaquesOr = ScriptHolder.GetComponent<ObjectClicker>().PlaquesOr;
@@ -38,7 +40,7 @@ public class Decoupeuse : MonoBehaviour
 
         if (IsUsed == true)
         {
-
+            anim.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeCoupe;
             BarDeProgressionInGame.value = TempsDeCoupe;
 
@@ -53,6 +55,7 @@ public class Decoupeuse : MonoBehaviour
                 {
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nFlan\nCuivre\n" + Flan;
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 2)
@@ -66,6 +69,7 @@ public class Decoupeuse : MonoBehaviour
                 {
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nFlan\nArgent\n" + Flan;
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 3)
@@ -79,12 +83,14 @@ public class Decoupeuse : MonoBehaviour
                 {
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nFlan\nOr\n" + Flan;
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
 
         }
         if (IsUsed == false)
         {
+            
             ButtonRecup.SetActive(false);
         }
 
