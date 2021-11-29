@@ -1403,7 +1403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &46798264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3559,7 +3559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: 'Graces a ces plaques de fer tu peut construire la decoupeuse avec l''Etablie '
+  dialogue: "Gr\xE2ce \xE0 ces plaques de fer tu peux construire la D\xE9coupeuse
+    avec l'Etabli "
 --- !u!114 &187729310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7594,8 +7595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: A tout moment tu peut consulter ton inventaire en haut a gauche pour
-    voir tes ressources
+  dialogue: "A tout moment tu peux consulter ton inventaire en haut \xE0 gauche pour
+    voir tes ressources"
 --- !u!114 &298477833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11733,9 +11734,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: "Parcontre c'est pas tr\xE8s legal donc pense a t'\xE9chaper avec ta
-    fortune dans le charrete avant le temps impartie sinon les autorit\xE9es vont
-    venir pour toi "
+  dialogue: "Par contre c'est pas tr\xE8s l\xE9gal donc pense \xE0 t'\xE9chapper
+    avec ta fortune dans le charette avant le temps imparti, sinon les autorit\xE9s
+    vont venir pour toi "
 --- !u!114 &365892021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17480,8 +17481,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: 'tu viens de creer tes premieres pieces bien evidament le but est de
-    construire de nouvelles mouleuse pour faire des pieces de plus grandes valeurs '
+  dialogue: "Tu viens de cr\xE9er tes premi\xE8res pi\xE8ces, bien \xE9videmment,
+    le but est de construire de nouvelles mouleuse pour faire des pieces de plus
+    grandes valeur "
 --- !u!114 &535519040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24461,7 +24463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &939706364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25092,8 +25094,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: "Avant de commencer notre cariere de faussaire il nous faut des mat\xE9riaux
-    pour creer nos machines "
+  dialogue: "Avant de commencer notre carri\xE8re de faussaire, il nous faut des
+    mat\xE9riaux afin de cr\xE9er nos machines "
 --- !u!114 &987390618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32927,8 +32929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: "La Decoupeuse est prete si tu as asser de mat\xE9riaux construit tes
-    premiers flans en Cuivre avec ! "
+  dialogue: "La D\xE9coupeuse est pr\xEAte !  Si tu as assez de mat\xE9riaux, construis
+    tes premiers flans en Cuivre avec ! "
 --- !u!114 &1272956066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33837,7 +33839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1356427884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34478,8 +34480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: 'Avec la mouleuse creer c''est la porte ouverte a la richesse tu peut
-    faire tes premierres pieces de cuivre avec '
+  dialogue: "Avec la Mouleuse, cr\xE9er c'est la porte ouverte a la richesse, tu
+    peux faire tes premi\xE8res pi\xE8ces de cuivre avec "
 --- !u!114 &1396850503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46114,8 +46116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 0.02
-  dialogue: Maintenant que tu as tes premiers flans il te faut une mouleuse a cuivres
-    pour en faire des pieces
+  dialogue: "Maintenant que tu as tes premiers flans il te faut une Mouleuse \xE0
+    Cuivres pour en faire des pi\xE8ces"
 --- !u!114 &2051829895
 MonoBehaviour:
   m_ObjectHideFlags: 0

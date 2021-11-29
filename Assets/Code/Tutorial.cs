@@ -98,7 +98,7 @@ public class Tutorial : MonoBehaviour
             tuto2.SetActive(false);
             TutorialCanvas.SetActive(false);
             imageObjectif.SetActive(true);
-            TexteObjectif.text = "Faire fondre les le fer au Four";
+            TexteObjectif.text = "Faire fondre le fer au Four";
             texteObjectif.SetActive(true);
             Fleche.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
@@ -123,7 +123,7 @@ public class Tutorial : MonoBehaviour
             tuto3.SetActive(false);
             TutorialCanvas.SetActive(false);
             imageObjectif.SetActive(true);
-            TexteObjectif.text = "Consruit la Decoupeuse";
+            TexteObjectif.text = "Consruis la Découpeuse";
             texteObjectif.SetActive(true);
             Fleche.transform.position = new Vector3(-5.52f, -1.12f, -0.49f);
             Fleche.SetActive(true);
@@ -159,7 +159,7 @@ public class Tutorial : MonoBehaviour
             tuto5.SetActive(false);
             TutorialCanvas.SetActive(false);
             imageObjectif.SetActive(true);
-            TexteObjectif.text = "Decouper ces premiers flans";
+            TexteObjectif.text = "Découpe ces premiers flans";
             texteObjectif.SetActive(true);
             Fleche.transform.position = new Vector3(1.79f, 1.7f, 6.05f);
             Fleche.SetActive(true);
@@ -184,7 +184,7 @@ public class Tutorial : MonoBehaviour
             tuto6.SetActive(false);
             TutorialCanvas.SetActive(false);
             imageObjectif.SetActive(true);
-            TexteObjectif.text = "Construire la Mouleuse de Cuivre";
+            TexteObjectif.text = "Construis la Mouleuse de Cuivre";
             texteObjectif.SetActive(true);
             Fleche.transform.position = new Vector3(-5.52f, -1.12f, -0.49f);
             Fleche.SetActive(true);
@@ -209,7 +209,7 @@ public class Tutorial : MonoBehaviour
             tuto7.SetActive(false);
             TutorialCanvas.SetActive(false);
             imageObjectif.SetActive(true);
-            TexteObjectif.text = "Moule tes premieres pieces";
+            TexteObjectif.text = "Moule tes premières pieces";
             texteObjectif.SetActive(true);
             Fleche.transform.position = new Vector3(-10.96f, -1.12f, -9.31f);
             Fleche.SetActive(true);
@@ -243,7 +243,7 @@ public class Tutorial : MonoBehaviour
             tuto9.SetActive(false);
             TutorialCanvas.SetActive(false);
             imageObjectif.SetActive(true);
-            TexteObjectif.text = "Fabrique le plus de pieces possibles avant de t'echaper";
+            TexteObjectif.text = "Fabrique le plus de pièces possibles avant de t'échapper";
             texteObjectif.SetActive(true);
             HUD.GetComponent<Image>().sprite = HUDTimer;
             TimerGame.SetActive(true);
