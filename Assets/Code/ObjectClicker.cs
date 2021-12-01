@@ -91,8 +91,9 @@ public class ObjectClicker : MonoBehaviour {
         ScoreTextPiecesArgent.text = "" + PiecesArgent;
         ScoreTextPiecesOr.text = "" + PiecesOr;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
         {
+            Touch touch = Input.GetTouch(0);
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
