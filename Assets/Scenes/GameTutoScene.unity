@@ -7488,7 +7488,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -34475,7 +34475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1190372315
 Transform:
   m_ObjectHideFlags: 0
@@ -36904,6 +36904,7 @@ MonoBehaviour:
   Fleche2: {fileID: 1657411570}
   Fleche3: {fileID: 1519153408}
   Fleche4: {fileID: 61031044}
+  Fleche5: {fileID: 0}
   FlecheCanvas: {fileID: 1938238403}
   FlecheCanvas2: {fileID: 719579930}
   Jeanne: {fileID: 1126399134}
@@ -42358,7 +42359,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

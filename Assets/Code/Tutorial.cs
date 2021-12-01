@@ -191,7 +191,7 @@ public class Tutorial : MonoBehaviour
             TexteObjectif.text = "Construis la Mouleuse de Cuivre";
             texteObjectif.SetActive(true);
             //Fleche.transform.position = new Vector3(-5.52f, -1.12f, -0.49f);
-            Fleche4.SetActive(true);
+            Fleche2.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
         }
@@ -200,7 +200,7 @@ public class Tutorial : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
             Jeanne.GetComponent<Image>().sprite = jeanne1;
-            Fleche4.SetActive(false);
+            Fleche2.SetActive(false);
             TutorialCanvas.SetActive(true);
             imageObjectif.SetActive(false);
             texteObjectif.SetActive(false);
@@ -216,7 +216,7 @@ public class Tutorial : MonoBehaviour
             TexteObjectif.text = "Moule tes premières pieces";
             texteObjectif.SetActive(true);
             //Fleche.transform.position = new Vector3(-10.96f, -1.12f, -9.31f);
-            Fleche5.SetActive(true);
+            Fleche4.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
         }
@@ -225,7 +225,7 @@ public class Tutorial : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
             Jeanne.GetComponent<Image>().sprite = jeanne3;
-            Fleche5.SetActive(false);
+            Fleche4.SetActive(false);
             TutorialCanvas.SetActive(true);
             imageObjectif.SetActive(false);
             texteObjectif.SetActive(false);
@@ -237,6 +237,8 @@ public class Tutorial : MonoBehaviour
             Jeanne.GetComponent<Image>().sprite = jeanne2;
             tuto8.SetActive(false);
             tuto9.SetActive(true);
+            HUD.GetComponent<Image>().sprite = HUDTimer;
+            TimerGame.SetActive(true);
             FlecheCanvas2.SetActive(true);
             tutoStep = 14;
             Timer = 0;
@@ -249,8 +251,6 @@ public class Tutorial : MonoBehaviour
             imageObjectif.SetActive(true);
             TexteObjectif.text = "Fabrique le plus de pièces possibles avant de t'échapper";
             texteObjectif.SetActive(true);
-            HUD.GetComponent<Image>().sprite = HUDTimer;
-            TimerGame.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<Time>().timerIsRunning = true;
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
