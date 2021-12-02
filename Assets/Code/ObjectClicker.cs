@@ -64,11 +64,16 @@ public class ObjectClicker : MonoBehaviour {
     public Text TextPiecesOr;
     public float PiecesOr = 0;
 
+    public float time = 0;
+
     public GameObject HUD;
     public GameObject CanvasWin;
     public Text ScoreTextPiecesOr;
     public Text ScoreTextPiecesArgent;
     public Text ScoreTextPiecesCuivre;
+
+    public GameObject anim;
+    public bool animIsPlayed = false;
 
     private void Update()
     {
@@ -158,6 +163,8 @@ public class ObjectClicker : MonoBehaviour {
                     TextOrC.text = OrC + " g";
                     GameObject.Find("Object (1)").GetComponent<ObjectRespawn>().enabled = true;
                     GameObject.Find("Object (1)").GetComponent<ObjectRespawn>().StartTimer();
+                    anim.gameObject.GetComponent<Animator>().enabled = true;
+                    animIsPlayed = true;
                 }
                 if (hit.transform.gameObject.name == "Or2")
                 {
@@ -343,7 +350,20 @@ public class ObjectClicker : MonoBehaviour {
                     GameObject.Find("Object (24)").GetComponent<ObjectRespawn>().enabled = true;
                     GameObject.Find("Object (24)").GetComponent<ObjectRespawn>().StartTimer();
                 }
+               
             }
         }
+
+        if (animIsPlayed == true)
+        {
+            time++;
+            if (time >= 100)
+            {
+                time = 0;
+                anim.gameObject.GetComponent<Animator>().enabled = false;
+                animIsPlayed = false;
+            }
+        }
+
     }
 }

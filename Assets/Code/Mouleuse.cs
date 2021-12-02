@@ -20,6 +20,8 @@ public class Mouleuse : MonoBehaviour
     public GameObject ButtonRecup;
     public Text TextButton;
 
+    public GameObject anim;
+
     void Update()
     {
         if(Type == 1)
@@ -40,6 +42,7 @@ public class Mouleuse : MonoBehaviour
 
         if (IsUsed == true)
         {
+            anim.gameObject.GetComponent<Animator>().enabled = true;
 
             BarreDeProgression.value = TempsDeMoulage;
             BarreDeProgressionInGame.value = TempsDeMoulage;
@@ -55,6 +58,7 @@ public class Mouleuse : MonoBehaviour
                 {
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nPieces\nCuivre\n" + Pieces;
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 2)
@@ -68,6 +72,7 @@ public class Mouleuse : MonoBehaviour
                 {
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nPieces\nArgent\n" + Pieces;
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 3)
@@ -81,6 +86,7 @@ public class Mouleuse : MonoBehaviour
                 {
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nPieces\nOr\n" + Pieces;
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
 
