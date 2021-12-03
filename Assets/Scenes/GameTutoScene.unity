@@ -37094,11 +37094,11 @@ MonoBehaviour:
   TextPlaquesOr: {fileID: 1532245658}
   PlaquesOr: 0
   TextFlanCuivre: {fileID: 1459322181}
-  FlanCuivre: 5005
+  FlanCuivre: 0
   TextFlanArgent: {fileID: 1918568934}
-  FlanArgent: 5000
+  FlanArgent: 0
   TextFlanOr: {fileID: 1151669870}
-  FlanOr: 5000
+  FlanOr: 0
   TextPiecesCuivre: {fileID: 2130593093}
   PiecesCuivre: 0
   TextPiecesArgent: {fileID: 1912792512}
