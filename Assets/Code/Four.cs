@@ -22,9 +22,16 @@ public class Four : MonoBehaviour
     public Slider BarDeProgression;
     public Slider BarDeProgressionInGame;
 
+    public GameObject PlaquesOr;
+    public GameObject PlaquesArgent;
+    public GameObject PlaquesCuivre;
+    public GameObject PlaquesFer;
+
     public float Plaques;
     public GameObject ButtonRecup;
     public Text TextButton;
+
+    public GameObject anim3D;
 
     void Update()
     {
@@ -39,7 +46,7 @@ public class Four : MonoBehaviour
 
          if(IsUsed == true)
          {
-
+            anim3D.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeFonte;
             BarDeProgressionInGame.value = TempsDeFonte;
 
@@ -53,7 +60,9 @@ public class Four : MonoBehaviour
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nPlaques\nFer\n" + Plaques;
+                    TextButton.text = "" + Plaques;
+                    PlaquesFer.SetActive(true);
+                    anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 2)
@@ -66,7 +75,9 @@ public class Four : MonoBehaviour
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nPlaques\nCuivre\n" + Plaques;
+                    TextButton.text = "" + Plaques;
+                    PlaquesCuivre.SetActive(true);
+                    anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 3)
@@ -79,7 +90,9 @@ public class Four : MonoBehaviour
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nPlaques\nArgent\n" + Plaques;
+                    TextButton.text = "" + Plaques;
+                    PlaquesArgent.SetActive(true);
+                    anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 4)
@@ -92,7 +105,9 @@ public class Four : MonoBehaviour
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nPlaques\nOr\n" + Plaques;
+                    TextButton.text = "" + Plaques;
+                    PlaquesOr.SetActive(true);
+                    anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
 
@@ -106,6 +121,7 @@ public class Four : MonoBehaviour
 
     public void RecupererPlaques()
     {
+        GameObject.Find("Main Camera").GetComponent<ObjectClicker>().animIsPlayed = true;
         if (Type == 1)
         {
             ScriptHolder.GetComponent<ObjectClicker>().PlaquesFer += Plaques;
@@ -124,6 +140,10 @@ public class Four : MonoBehaviour
         }
         Plaques = 0;
         IsUsed = false;
+        PlaquesFer.SetActive(false);
+        PlaquesCuivre.SetActive(false);
+        PlaquesArgent.SetActive(false);
+        PlaquesOr.SetActive(false);
 
     }
     public void FondreFer()

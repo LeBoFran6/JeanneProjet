@@ -27,6 +27,7 @@ public class Decoupeuse : MonoBehaviour
     public Text TextButton;
 
     public GameObject anim;
+    public GameObject anim3D;
 
     void Update()
     {
@@ -41,6 +42,7 @@ public class Decoupeuse : MonoBehaviour
         if (IsUsed == true)
         {
             anim.gameObject.GetComponent<Animator>().enabled = true;
+            anim3D.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeCoupe;
             BarDeProgressionInGame.value = TempsDeCoupe;
 
@@ -56,6 +58,7 @@ public class Decoupeuse : MonoBehaviour
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nFlan\nCuivre\n" + Flan;
                     anim.gameObject.GetComponent<Animator>().enabled = false;
+                    anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 2)
@@ -70,6 +73,7 @@ public class Decoupeuse : MonoBehaviour
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nFlan\nArgent\n" + Flan;
                     anim.gameObject.GetComponent<Animator>().enabled = false;
+                    anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
             if (Type == 3)
@@ -84,6 +88,7 @@ public class Decoupeuse : MonoBehaviour
                     ButtonRecup.SetActive(true);
                     TextButton.text = "Recup\nFlan\nOr\n" + Flan;
                     anim.gameObject.GetComponent<Animator>().enabled = false;
+                    anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
 
@@ -98,6 +103,7 @@ public class Decoupeuse : MonoBehaviour
 
     public void RecupererFlan()
     {
+        GameObject.Find("Main Camera").GetComponent<ObjectClicker>().animIsPlayed = true;
         if (Type == 1)
         {
             ScriptHolder.GetComponent<ObjectClicker>().FlanCuivre += Flan;

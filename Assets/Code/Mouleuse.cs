@@ -105,6 +105,7 @@ public class Mouleuse : MonoBehaviour
 
     public void RecupererPieces()
     {
+        GameObject.Find("Main Camera").GetComponent<ObjectClicker>().animIsPlayed = true;
         if (Type == 1)
         {
             ScriptHolder.GetComponent<ObjectClicker>().PiecesCuivre += Pieces;
