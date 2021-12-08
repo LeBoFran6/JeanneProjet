@@ -31,6 +31,9 @@ public class Four : MonoBehaviour
     public GameObject ButtonRecup;
     public Text TextButton;
 
+    public Image four;
+    public Sprite noAnim;
+    public GameObject anim;
     public GameObject anim3D;
 
     void Update()
@@ -46,6 +49,7 @@ public class Four : MonoBehaviour
 
          if(IsUsed == true)
          {
+            anim.gameObject.GetComponent<Animator>().enabled = true;
             anim3D.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeFonte;
             BarDeProgressionInGame.value = TempsDeFonte;
@@ -62,6 +66,8 @@ public class Four : MonoBehaviour
                     ButtonRecup.SetActive(true);
                     TextButton.text = "" + Plaques;
                     PlaquesFer.SetActive(true);
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
+                    four.sprite = noAnim;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
@@ -77,6 +83,8 @@ public class Four : MonoBehaviour
                     ButtonRecup.SetActive(true);
                     TextButton.text = "" + Plaques;
                     PlaquesCuivre.SetActive(true);
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
+                    four.sprite = noAnim;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
@@ -92,6 +100,8 @@ public class Four : MonoBehaviour
                     ButtonRecup.SetActive(true);
                     TextButton.text = "" + Plaques;
                     PlaquesArgent.SetActive(true);
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
+                    four.sprite = noAnim;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }
@@ -107,6 +117,8 @@ public class Four : MonoBehaviour
                     ButtonRecup.SetActive(true);
                     TextButton.text = "" + Plaques;
                     PlaquesOr.SetActive(true);
+                    anim.gameObject.GetComponent<Animator>().enabled = false;
+                    four.sprite = noAnim;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
             }

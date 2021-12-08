@@ -21,6 +21,9 @@ public class Decoupeuse : MonoBehaviour
     public Slider BarDeProgression;
     public Slider BarDeProgressionInGame;
 
+    public GameObject FlanOr;
+    public GameObject FlanArgent;
+    public GameObject FlanCuivre;
 
     public float Flan;
     public GameObject ButtonRecup;
@@ -56,7 +59,8 @@ public class Decoupeuse : MonoBehaviour
                 if (TempsDeCoupe == 0 || TempsDeCoupe < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nFlan\nCuivre\n" + Flan;
+                    TextButton.text = "" + Flan;
+                    FlanCuivre.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
@@ -71,7 +75,8 @@ public class Decoupeuse : MonoBehaviour
                 if (TempsDeCoupe == 0 || TempsDeCoupe < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nFlan\nArgent\n" + Flan;
+                    TextButton.text = "" + Flan;
+                    FlanArgent.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
@@ -86,7 +91,8 @@ public class Decoupeuse : MonoBehaviour
                 if (TempsDeCoupe == 0 || TempsDeCoupe < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nFlan\nOr\n" + Flan;
+                    TextButton.text = "" + Flan;
+                    FlanOr.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
@@ -118,6 +124,9 @@ public class Decoupeuse : MonoBehaviour
         }
         Flan = 0;
         IsUsed = false;
+        FlanCuivre.SetActive(false);
+        FlanArgent.SetActive(false);
+        FlanOr.SetActive(false);
 
     }
     public void CouperCuivre()

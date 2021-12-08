@@ -11,7 +11,7 @@ public class StopAnimation : MonoBehaviour
     void Update()
     {
         time++;
-        if (time >= 150 && isOff == false)
+        if (time >= 50 && isOff == false)
         {
             anim3D.gameObject.GetComponent<Animator>().enabled = false;
             isOff = true;

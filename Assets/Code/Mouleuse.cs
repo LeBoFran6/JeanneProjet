@@ -20,6 +20,8 @@ public class Mouleuse : MonoBehaviour
     public GameObject ButtonRecup;
     public Text TextButton;
 
+    public GameObject piece;
+
     public GameObject anim;
     public GameObject anim3D;
 
@@ -59,7 +61,8 @@ public class Mouleuse : MonoBehaviour
                 if (TempsDeMoulage == 0 || TempsDeMoulage < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nPieces\nCuivre\n" + Pieces;
+                    TextButton.text = "" + Pieces;
+                    piece.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
@@ -74,7 +77,8 @@ public class Mouleuse : MonoBehaviour
                 if (TempsDeMoulage == 0 || TempsDeMoulage < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nPieces\nArgent\n" + Pieces;
+                    TextButton.text = "" + Pieces;
+                    piece.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
@@ -89,7 +93,8 @@ public class Mouleuse : MonoBehaviour
                 if (TempsDeMoulage == 0 || TempsDeMoulage < 0)
                 {
                     ButtonRecup.SetActive(true);
-                    TextButton.text = "Recup\nPieces\nOr\n" + Pieces;
+                    TextButton.text = "" + Pieces;
+                    piece.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
                 }
@@ -120,6 +125,7 @@ public class Mouleuse : MonoBehaviour
         }
         Pieces = 0;
         IsUsed = false;
+        piece.SetActive(false);
 
     }
     public void MoulerCuivre()
