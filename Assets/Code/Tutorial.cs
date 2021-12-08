@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
+    public GameObject CameraAnim;
+
     public GameObject ScriptCamera;
     public GameObject ScriptAtelier;
 
@@ -58,7 +60,10 @@ public class Tutorial : MonoBehaviour
 
     public float Timer = 0;
     public bool timergo = false;
-        
+
+    public bool cameraSlides = false;
+    public float Timer2 = 0;
+
 
     public void Start()
     {
@@ -75,6 +80,17 @@ public class Tutorial : MonoBehaviour
         decoupeuse = ScriptAtelier.GetComponent<Atelier>().decoupeuse;
         mouleuseCruivre = ScriptAtelier.GetComponent<Atelier>().mouleuseCruivre;
 
+        if(cameraSlides == true)
+        {
+            Timer2 = Timer2 + 0.05f;
+            if(Timer2 >= 30)
+            {
+                CameraAnim.gameObject.GetComponent<Animator>().enabled = false;
+                cameraSlides = false;
+                Timer2 = 0;
+            }
+        }
+
 
         if (Input.GetMouseButtonDown(0) && tutoStep == 0)
         {
@@ -82,6 +98,8 @@ public class Tutorial : MonoBehaviour
             TutorialCanvas.SetActive(false);
             imageObjectif.SetActive(true);
             texteObjectif.SetActive(true);
+            CameraAnim.gameObject.GetComponent<Animator>().enabled = true;
+            cameraSlides = true;
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
             tutoStep = 1;
