@@ -12,6 +12,8 @@ public class Time : MonoBehaviour
     public GameObject HUD;
     public GameObject GameOver;
 
+    public GameObject EchapezVous;
+
     private void Start()
     {
         //timerIsRunning = true;
@@ -26,7 +28,11 @@ public class Time : MonoBehaviour
                 timeRemaining -= UnityEngine.Time.deltaTime;
                 DisplayTime(timeRemaining);
             }
-            else
+            if (timeRemaining <= 35)
+            {
+                EchapezVous.SetActive(true);
+            }
+            if(timeRemaining < 0)
             {
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
