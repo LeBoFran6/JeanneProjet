@@ -49,6 +49,8 @@ public class Tutorial : MonoBehaviour
 
     public GameObject PinchTuto;
 
+    public GameObject Charrette;
+
 
 
     public float Fer;
@@ -272,6 +274,7 @@ public class Tutorial : MonoBehaviour
             imageObjectif.SetActive(true);
             TexteObjectif.text = "Fabrique le plus de pièces possibles avant de t'échapper";
             texteObjectif.SetActive(true);
+            Charrette.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<Time>().timerIsRunning = true;
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;

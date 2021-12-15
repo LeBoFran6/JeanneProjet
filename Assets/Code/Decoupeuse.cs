@@ -51,7 +51,7 @@ public class Decoupeuse : MonoBehaviour
             anim3D.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeCoupe;
             BarDeProgressionInGame.value = TempsDeCoupe;
-            AudioDecoupeuse.Play();
+            
 
             if (Type == 1)
             {
@@ -151,6 +151,7 @@ public class Decoupeuse : MonoBehaviour
                 BarDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().PlaquesCuivre = 0;
                 Type = 1;
+                AudioDecoupeuse.Play();
             }
         }
     }
@@ -169,6 +170,7 @@ public class Decoupeuse : MonoBehaviour
                 BarDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().PlaquesArgent = 0;
                 Type = 2;
+                AudioDecoupeuse.Play();
             }
         }
     }
@@ -187,6 +189,7 @@ public class Decoupeuse : MonoBehaviour
                 BarDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().PlaquesOr = 0;
                 Type = 3;
+                AudioDecoupeuse.Play();
             }
         }
     }

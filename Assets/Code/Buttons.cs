@@ -10,6 +10,8 @@ public class Buttons : MonoBehaviour
     public GameObject CanvasOptions;
     public GameObject CanvasTuto;
     public GameObject Cinematique;
+    public GameObject Credits;
+
     public bool tutorial = false;
 
     public void CloseCanvas()
@@ -66,6 +68,18 @@ public class Buttons : MonoBehaviour
     public void ReturnOptions()
     {
         CanvasOptions.SetActive(false);
+        CanvasMenu.SetActive(true);
+    }
+
+    public void LesCredits()
+    {
+        CanvasMenu.SetActive(false);
+        Credits.SetActive(true);
+    }
+
+    public void ReturnCredits()
+    {
+        Credits.SetActive(false);
         CanvasMenu.SetActive(true);
     }
 }

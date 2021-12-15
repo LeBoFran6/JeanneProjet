@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 [ExecuteInEditMode()]
 public class Mouleuse : MonoBehaviour
@@ -24,6 +25,10 @@ public class Mouleuse : MonoBehaviour
 
     public GameObject anim;
     public GameObject anim3D;
+
+    public AudioSource AudioMouleuse;
+
+    public AudioSource AudioLootMoney;
 
     void Update()
     {
@@ -65,6 +70,7 @@ public class Mouleuse : MonoBehaviour
                     piece.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
+                    AudioMouleuse.Pause();
                 }
             }
             if (Type == 2)
@@ -81,6 +87,7 @@ public class Mouleuse : MonoBehaviour
                     piece.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
+                    AudioMouleuse.Pause();
                 }
             }
             if (Type == 3)
@@ -97,6 +104,7 @@ public class Mouleuse : MonoBehaviour
                     piece.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
+                    AudioMouleuse.Pause();
                 }
             }
 
@@ -126,7 +134,7 @@ public class Mouleuse : MonoBehaviour
         Pieces = 0;
         IsUsed = false;
         piece.SetActive(false);
-
+        AudioLootMoney.Play();
     }
     public void MoulerCuivre()
     {
@@ -142,6 +150,7 @@ public class Mouleuse : MonoBehaviour
                 BarreDeProgressionInGame.maxValue = TempsDeMoulage;
                 BarreDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().FlanCuivre = 0;
+                AudioMouleuse.Play();
             }
         }
     }
@@ -159,6 +168,7 @@ public class Mouleuse : MonoBehaviour
                 BarreDeProgressionInGame.maxValue = TempsDeMoulage;
                 BarreDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().FlanArgent = 0;
+                AudioMouleuse.Play();
             }
         }
     }
@@ -176,6 +186,7 @@ public class Mouleuse : MonoBehaviour
                 BarreDeProgressionInGame.maxValue = TempsDeMoulage;
                 BarreDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().FlanOr = 0;
+                AudioMouleuse.Play();
             }
         }
     }

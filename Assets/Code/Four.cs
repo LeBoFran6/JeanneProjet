@@ -56,7 +56,7 @@ public class Four : MonoBehaviour
             anim3D.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeFonte;
             BarDeProgressionInGame.value = TempsDeFonte;
-            AudioFour.Play();
+            
 
             if (Type == 1)
             {
@@ -179,6 +179,7 @@ public class Four : MonoBehaviour
                 BarDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().FerC = 0;
                 Type = 1;
+                AudioFour.Play();
             }
         }
     }
@@ -197,6 +198,7 @@ public class Four : MonoBehaviour
                 BarDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().CuivreC = 0;
                 Type = 2;
+                AudioFour.Play();
             }
         }
     }
@@ -215,6 +217,7 @@ public class Four : MonoBehaviour
                 BarDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().ArgentC = 0;
                 Type = 3;
+                AudioFour.Play();
             }
         }
     }
@@ -233,6 +236,7 @@ public class Four : MonoBehaviour
                 BarDeProgressionInGame.value = 0;
                 ScriptHolder.GetComponent<ObjectClicker>().OrC = 0;
                 Type = 4;
+                AudioFour.Play();
             }
         }
     }
