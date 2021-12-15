@@ -87,7 +87,7 @@ public class Tutorial : MonoBehaviour
         if(cameraSlides == true)
         {
             Timer2 = Timer2 + 0.05f;
-            if(Timer2 >= 30)
+            if(Timer2 >= 25)
             {
                 CameraAnim.gameObject.GetComponent<Animator>().enabled = false;
                 cameraSlides = false;

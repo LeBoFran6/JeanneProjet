@@ -142,7 +142,7 @@ public class ObjectClicker : MonoBehaviour {
         {
             anim.gameObject.GetComponent<Animator>().enabled = true;
             time++;
-            if (time >= 100)
+            if (time >= 15)
             {
                 time = 0;
                 anim.gameObject.GetComponent<Animator>().enabled = false;

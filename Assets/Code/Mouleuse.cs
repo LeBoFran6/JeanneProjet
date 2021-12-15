@@ -60,7 +60,7 @@ public class Mouleuse : MonoBehaviour
             {
                 if (TempsDeMoulage > 0)
                 {
-                    TempsDeMoulage = TempsDeMoulage - 3f;
+                    TempsDeMoulage = TempsDeMoulage - 6f;
                     TextMoulage.text = TempsDeMoulage + "\nFlan";
                 }
                 if (TempsDeMoulage == 0 || TempsDeMoulage < 0)
@@ -77,7 +77,7 @@ public class Mouleuse : MonoBehaviour
             {
                 if (TempsDeMoulage > 0)
                 {
-                    TempsDeMoulage = TempsDeMoulage - 2f;
+                    TempsDeMoulage = TempsDeMoulage - 4f;
                     TextMoulage.text = TempsDeMoulage + "\nFlan";
                 }
                 if (TempsDeMoulage == 0 || TempsDeMoulage < 0)
@@ -94,7 +94,7 @@ public class Mouleuse : MonoBehaviour
             {
                 if (TempsDeMoulage > 0)
                 {
-                    TempsDeMoulage = TempsDeMoulage - 1f;
+                    TempsDeMoulage = TempsDeMoulage - 3f;
                     TextMoulage.text = TempsDeMoulage + "\nFlan";
                 }
                 if (TempsDeMoulage == 0 || TempsDeMoulage < 0)

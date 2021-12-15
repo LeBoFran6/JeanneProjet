@@ -57,7 +57,7 @@ public class Decoupeuse : MonoBehaviour
             {
                 if (TempsDeCoupe > 0)
                 {
-                    TempsDeCoupe = TempsDeCoupe - 0.08f;
+                    TempsDeCoupe = TempsDeCoupe - 0.15f;
                     TextCoupe.text = TempsDeCoupe + "\nFlan";
                 }
                 if (TempsDeCoupe == 0 || TempsDeCoupe < 0)
@@ -74,7 +74,7 @@ public class Decoupeuse : MonoBehaviour
             {
                 if (TempsDeCoupe > 0)
                 {
-                    TempsDeCoupe = TempsDeCoupe - 0.04f;
+                    TempsDeCoupe = TempsDeCoupe - 0.08f;
                     TextCoupe.text = TempsDeCoupe + "\nFlan";
                 }
                 if (TempsDeCoupe == 0 || TempsDeCoupe < 0)
@@ -91,7 +91,7 @@ public class Decoupeuse : MonoBehaviour
             {
                 if (TempsDeCoupe > 0)
                 {
-                    TempsDeCoupe = TempsDeCoupe - 0.02f;
+                    TempsDeCoupe = TempsDeCoupe - 0.04f;
                     TextCoupe.text = TempsDeCoupe + "\nFlan";
                 }
                 if (TempsDeCoupe == 0 || TempsDeCoupe < 0)

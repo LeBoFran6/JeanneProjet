@@ -62,7 +62,7 @@ public class Four : MonoBehaviour
             {
                 if (TempsDeFonte > 0)
                 {
-                    TempsDeFonte = TempsDeFonte - 8f;
+                    TempsDeFonte = TempsDeFonte - 14f;
                     TextFonte.text = TempsDeFonte + " g";
                 }
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
@@ -79,7 +79,7 @@ public class Four : MonoBehaviour
             {
                 if (TempsDeFonte > 0)
                 {
-                    TempsDeFonte = TempsDeFonte - 4f;
+                    TempsDeFonte = TempsDeFonte - 8f;
                     TextFonte.text = TempsDeFonte + " g";
                 }
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
@@ -96,7 +96,7 @@ public class Four : MonoBehaviour
             {
                 if (TempsDeFonte > 0)
                 {
-                    TempsDeFonte = TempsDeFonte - 2f;
+                    TempsDeFonte = TempsDeFonte - 4f;
                     TextFonte.text = TempsDeFonte + " g";
                 }
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
@@ -113,7 +113,7 @@ public class Four : MonoBehaviour
             {
                 if (TempsDeFonte > 0)
                 {
-                    TempsDeFonte = TempsDeFonte - 0.5f;
+                    TempsDeFonte = TempsDeFonte - 2f;
                     TextFonte.text = TempsDeFonte + " g";
                 }
                 if (TempsDeFonte == 0 || TempsDeFonte < 0)
