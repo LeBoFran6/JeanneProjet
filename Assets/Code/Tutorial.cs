@@ -47,6 +47,8 @@ public class Tutorial : MonoBehaviour
     public Sprite HUDTimer;
     public GameObject TimerGame;
 
+    public GameObject PinchTuto;
+
 
 
     public float Fer;
@@ -100,6 +102,7 @@ public class Tutorial : MonoBehaviour
             texteObjectif.SetActive(true);
             CameraAnim.gameObject.GetComponent<Animator>().enabled = true;
             cameraSlides = true;
+            PinchTuto.SetActive(true);
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
             tutoStep = 1;
@@ -272,6 +275,7 @@ public class Tutorial : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<Time>().timerIsRunning = true;
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
+            tutoStep = 15;
         }
 
         if (timergo == true)

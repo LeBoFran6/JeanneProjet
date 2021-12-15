@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 [ExecuteInEditMode()]
 public class Decoupeuse : MonoBehaviour
@@ -32,6 +33,8 @@ public class Decoupeuse : MonoBehaviour
     public GameObject anim;
     public GameObject anim3D;
 
+    public AudioSource AudioDecoupeuse;
+
     void Update()
     {
         PlaquesOr = ScriptHolder.GetComponent<ObjectClicker>().PlaquesOr;
@@ -48,6 +51,7 @@ public class Decoupeuse : MonoBehaviour
             anim3D.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeCoupe;
             BarDeProgressionInGame.value = TempsDeCoupe;
+            AudioDecoupeuse.Play();
 
             if (Type == 1)
             {
@@ -63,6 +67,7 @@ public class Decoupeuse : MonoBehaviour
                     FlanCuivre.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
+                    AudioDecoupeuse.Pause();
                 }
             }
             if (Type == 2)
@@ -79,6 +84,7 @@ public class Decoupeuse : MonoBehaviour
                     FlanArgent.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
+                    AudioDecoupeuse.Pause();
                 }
             }
             if (Type == 3)
@@ -95,6 +101,7 @@ public class Decoupeuse : MonoBehaviour
                     FlanOr.SetActive(true);
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
+                    AudioDecoupeuse.Pause();
                 }
             }
 

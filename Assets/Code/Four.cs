@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 [ExecuteInEditMode()]
 public class Four : MonoBehaviour
@@ -36,6 +37,8 @@ public class Four : MonoBehaviour
     public GameObject anim;
     public GameObject anim3D;
 
+    public AudioSource AudioFour;
+
     void Update()
     {
         Or = ScriptHolder.GetComponent<ObjectClicker>().OrC;
@@ -53,6 +56,7 @@ public class Four : MonoBehaviour
             anim3D.gameObject.GetComponent<Animator>().enabled = true;
             BarDeProgression.value = TempsDeFonte;
             BarDeProgressionInGame.value = TempsDeFonte;
+            AudioFour.Play();
 
             if (Type == 1)
             {
@@ -120,14 +124,16 @@ public class Four : MonoBehaviour
                     anim.gameObject.GetComponent<Animator>().enabled = false;
                     four.sprite = noAnim;
                     anim3D.gameObject.GetComponent<Animator>().enabled = false;
+                    AudioFour.Pause();
                 }
             }
 
-        }
+         }
          if(IsUsed == false)
          {
             ButtonRecup.SetActive(false);
-        }
+            AudioFour.Pause();
+         }
 
     }
 

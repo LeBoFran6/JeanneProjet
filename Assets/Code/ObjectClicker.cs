@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class ObjectClicker : MonoBehaviour {
 
@@ -76,6 +77,12 @@ public class ObjectClicker : MonoBehaviour {
 
     public GameObject anim;
     public bool animIsPlayed = false;
+
+
+
+    public GameObject AudioWin;
+
+    public AudioSource AudioLoot;
 
 
 
@@ -154,6 +161,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = false;
             GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
             CanvasWin.SetActive(true);
+            AudioWin.SetActive(true);
         }
 
         if (hit.transform.gameObject.name == "Atelier")
@@ -205,6 +213,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (1)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (1)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Or2")
         {
@@ -214,6 +223,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (2)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (2)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Or3")
         {
@@ -223,6 +233,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (3)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (3)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Or4")
         {
@@ -232,6 +243,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (4)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (4)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Or5")
         {
@@ -241,6 +253,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (5)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (5)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Or6")
         {
@@ -250,6 +263,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (6)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (6)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Argent1")
         {
@@ -259,6 +273,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (7)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (7)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Argent2")
         {
@@ -268,6 +283,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (8)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (8)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Argent3")
         {
@@ -277,6 +293,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (9)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (9)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Argent4")
         {
@@ -286,6 +303,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (10)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (10)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Argent5")
         {
@@ -295,6 +313,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (11)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (11)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Argent6")
         {
@@ -304,6 +323,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (12)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (12)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Cuivre1")
         {
@@ -313,6 +333,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (13)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (13)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Cuivre2")
         {
@@ -322,6 +343,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (14)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (14)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Cuivre3")
         {
@@ -331,6 +353,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (15)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (15)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Cuivre4")
         {
@@ -340,6 +363,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (16)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (16)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Cuivre5")
         {
@@ -349,6 +373,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (17)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (17)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Cuivre6")
         {
@@ -358,6 +383,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (18)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (18)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Fer1")
         {
@@ -367,6 +393,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (19)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (19)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Fer2")
         {
@@ -376,6 +403,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (20)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (20)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Fer3")
         {
@@ -385,6 +413,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (21)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (21)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Fer4")
         {
@@ -394,6 +423,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (22)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (22)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Fer5")
         {
@@ -403,6 +433,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (23)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (23)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
         if (hit.transform.gameObject.name == "Fer6")
         {
@@ -412,6 +443,7 @@ public class ObjectClicker : MonoBehaviour {
             GameObject.Find("Object (24)").GetComponent<ObjectRespawn>().enabled = true;
             GameObject.Find("Object (24)").GetComponent<ObjectRespawn>().StartTimer();
             animIsPlayed = true;
+            AudioLoot.Play();
         }
     }
 }

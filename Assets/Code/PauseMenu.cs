@@ -29,7 +29,10 @@ public class PauseMenu : MonoBehaviour
     {
         Button.image.sprite = NotPause;
         PauseCanvas.SetActive(false);
-        GameObject.Find("Main Camera").GetComponent<Time>().timerIsRunning = true;
+        if(GameObject.Find("Tutorial").GetComponent<Tutorial>().tutoStep == 15)
+        {
+            GameObject.Find("Main Camera").GetComponent<Time>().timerIsRunning = true;
+        }
         GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled = true;
         GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = true;
     }

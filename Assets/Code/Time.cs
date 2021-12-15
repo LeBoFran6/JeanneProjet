@@ -14,6 +14,12 @@ public class Time : MonoBehaviour
 
     public GameObject EchapezVous;
 
+    public GameObject AudioTuto;
+    public GameObject AudioMain;
+    public GameObject AudioFast;
+
+    public GameObject AudioLoose;
+
     private void Start()
     {
         //timerIsRunning = true;
@@ -31,6 +37,8 @@ public class Time : MonoBehaviour
             if (timeRemaining <= 35)
             {
                 EchapezVous.SetActive(true);
+                AudioMain.SetActive(false);
+                AudioFast.SetActive(true);
             }
             if(timeRemaining < 0)
             {
@@ -41,7 +49,12 @@ public class Time : MonoBehaviour
                 GameObject.Find("Main Camera").GetComponent<ObjectClicker>().enabled = false;
                 HUD.SetActive(true);
                 GameOver.SetActive(true);
+                AudioMain.SetActive(false);
+                AudioFast.SetActive(false);
+                AudioLoose.SetActive(true);
             }
+            AudioTuto.SetActive(false);
+            AudioMain.SetActive(true);
         }
     }
 
